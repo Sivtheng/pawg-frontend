@@ -6,28 +6,28 @@ const Footer: React.FC = () => {
     <footer className="bg-primary text-black py-8">
       {/* Top Layer: Social Media Icons */}
       <div className="flex justify-center space-x-6 mb-6">
-        <Link href="https://github.com" className="hover:text-gray-700" aria-label="GitHub">
+        <Link href="https://github.com/Sivtheng" target="_blank" rel="noopener noreferrer" className="hover:text-gray-700" aria-label="GitHub">
           <FaGithub size={24} />
         </Link>
-        <Link href="https://twitter.com" className="hover:text-gray-700" aria-label="Twitter">
+        <Link href="https://x.com/svthngchng" target="_blank" rel="noopener noreferrer" className="hover:text-gray-700" aria-label="Twitter">
           <FaTwitter size={24} />
         </Link>
-        <Link href="https://facebook.com" className="hover:text-gray-700" aria-label="Facebook">
+        <Link href="https://www.facebook.com/sivtheng24" target="_blank" rel="noopener noreferrer" className="hover:text-gray-700" aria-label="Facebook">
           <FaFacebook size={24} />
         </Link>
-        <Link href="https://instagram.com" className="hover:text-gray-700" aria-label="Instagram">
+        <Link href="https://www.instagram.com/maxyjang" target="_blank" rel="noopener noreferrer" className="hover:text-gray-700" aria-label="Instagram">
           <FaInstagram size={24} />
         </Link>
-        <Link href="https://telegram.org" className="hover:text-gray-700" aria-label="Telegram">
+        <Link href="https://t.me/maxyjang" target="_blank" rel="noopener noreferrer" className="hover:text-gray-700" aria-label="Telegram">
           <FaTelegram size={24} />
         </Link>
-        <Link href="https://reddit.com" className="hover:text-gray-700" aria-label="Reddit">
+        <Link href="https://www.reddit.com/user/sivtheng/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-700" aria-label="Reddit">
           <FaReddit size={24} />
         </Link>
-        <Link href="https://spotify.com" className="hover:text-gray-700" aria-label="Spotify">
+        <Link href="https://open.spotify.com/user/313qjwth3hvxbcluazpcmzgh4xbq" target="_blank" rel="noopener noreferrer" className="hover:text-gray-700" aria-label="Spotify">
           <FaSpotify size={24} />
         </Link>
-        <Link href="https://linkedin.com" className="hover:text-gray-700" aria-label="LinkedIn">
+        <Link href="https://www.linkedin.com/in/sivtheng-chang-52a013207" target="_blank" rel="noopener noreferrer" className="hover:text-gray-700" aria-label="LinkedIn">
           <FaLinkedin size={24} />
         </Link>
       </div>
