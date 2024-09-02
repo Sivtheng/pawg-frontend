@@ -14,6 +14,9 @@ const config: Config = {
         accent: '#C8CFA0',
         muted: '#78ABA8',
       },
+      fontFamily: {
+        suse: ['SUSE', 'sans-serif'],
+      },
     },
   },
   plugins: [],
