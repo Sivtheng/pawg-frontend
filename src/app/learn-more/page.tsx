@@ -129,7 +129,7 @@ const LearnMorePage = () => {
       <div className="flex-grow flex items-center justify-center bg-secondary py-12 px-4">
         <div className="text-center max-w-5l mx-auto">
           <Link
-            href="/meet-the-team"
+            href="/learn-more/meet-the-team"
             className="inline-block bg-primary text-black py-3 px-6 rounded-lg hover:bg-accent transition-colors font-semibold text-lg"
           >
             Meet The Team
