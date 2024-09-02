@@ -1,26 +1,45 @@
-import React from 'react';
+'use client'; 
+
+import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import './globals.css'; // Import global styles
-import Head from 'next/head';
+import './globals.css';
 
-export const metadata = {
-  title: 'Pawg Adoption Center',
-  description: 'Adopt a pet and make a difference!',
+const ScrollToTopButton: React.FC = () => {
+  const [isVisible, setIsVisible] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsVisible(window.scrollY > 300);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  return (
+    isVisible && (
+      <button
+        onClick={scrollToTop}
+        className="fixed bottom-6 right-6 bg-secondary text-white p-3 rounded-full shadow-lg hover:bg-accent transition-colors"
+        aria-label="Scroll to top"
+      >
+        ↑
+      </button>
+    )
+  );
 };
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <html lang="en">
-      <Head>
-        {/* Preconnect and Font Links */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
       <body className="min-h-screen flex flex-col font-suse">
         <Navbar />
         <main className="flex-grow container mx-auto p-4 bg-secondary">

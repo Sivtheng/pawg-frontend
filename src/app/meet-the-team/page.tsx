@@ -1,4 +1,12 @@
 import React from 'react';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Meet The Team',
+  icons: {
+    icon: '/images/doge-logo.png',
+  },
+};
 
 const MeetTheTeamPage = () => {
   return (

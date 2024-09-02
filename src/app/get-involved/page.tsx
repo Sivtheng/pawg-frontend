@@ -1,4 +1,12 @@
 import React from 'react';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Get Involved',
+  icons: {
+    icon: '/images/doge-logo.png',
+  },
+};
 
 const GetInvolvedPage = () => {
   return (

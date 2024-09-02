@@ -1,5 +1,12 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Home',
+  icons: {
+    icon: '/images/doge-logo.png',
+  },
+};
 
 const IndexPage: React.FC = () => {
   return (
