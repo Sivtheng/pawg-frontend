@@ -14,6 +14,12 @@ const Navbar: React.FC = () => {
 
         {/* Menu */}
         <div className="flex space-x-6 text-xl font-bold">
+          <Link href="/" className="hover:text-gray-700" aria-label="Adopt">
+            Home
+          </Link>
+          <Link href="/learn-more" className="hover:text-gray-700" aria-label="Adopt">
+            About Us
+          </Link>
           <Link href="/veterinary" className="hover:text-gray-700" aria-label="Veterinary">
             Veterinary
           </Link>
