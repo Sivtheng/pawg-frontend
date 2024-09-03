@@ -22,7 +22,7 @@ const LearnMorePage = () => {
           </h2>
         </div>
       </div>
-      {/* Content Section 1*/} 
+      {/* Content Section 1*/}
       <section className="flex flex-col items-center justify-center bg-secondary pb-6">
         <div className="flex flex-col lg:flex-row items-center justify-between w-full">
           <div className="flex flex-col items-center lg:items-start lg:w-1/2 mb-6 lg:mb-0">
@@ -47,7 +47,7 @@ const LearnMorePage = () => {
           </div>
         </div>
       </section>
-      {/* Content Section 2*/} 
+      {/* Content Section 2*/}
       <section className="flex flex-col items-center justify-center bg-secondary pb-6">
         <div className="flex flex-col lg:flex-row items-center justify-between w-full">
           <div className="flex flex-col items-center lg:items-start lg:w-1/2 mb-6 lg:mb-0">
@@ -67,12 +67,12 @@ const LearnMorePage = () => {
               </h1>
             </div>
             <p className="text-lg leading-relaxed">
-            We take the 5 animal welfare Acts very seriously. Meaning, for every animal we rescue, we will place full priority on nursing it back to full health, rehabilitating them into behaving naturally for their species(run,jump,etc), and provide therapy if needed in order for them to be ready for adoption when the time is right.
+              We take the 5 animal welfare Acts very seriously. Meaning, for every animal we rescue, we will place full priority on nursing it back to full health, rehabilitating them into behaving naturally for their species(run,jump,etc), and provide therapy if needed in order for them to be ready for adoption when the time is right.
             </p>
           </div>
         </div>
       </section>
-      {/* Content Section 3*/} 
+      {/* Content Section 3*/}
       <section className="flex flex-col items-center justify-center bg-secondary pb-6">
         <div className="flex flex-col lg:flex-row items-center justify-between w-full">
           <div className="flex flex-col items-center lg:items-start lg:w-1/2 mb-6 lg:mb-0">
@@ -97,7 +97,7 @@ const LearnMorePage = () => {
           </div>
         </div>
       </section>
-      {/* Content Section 4*/} 
+      {/* Content Section 4*/}
       <section className="flex flex-col items-center justify-center bg-secondary pb-6">
         <div className="flex flex-col lg:flex-row items-center justify-between w-full">
           <div className="flex flex-col items-center lg:items-start lg:w-1/2 mb-6 lg:mb-0">
@@ -117,7 +117,7 @@ const LearnMorePage = () => {
               </h1>
             </div>
             <p className="text-lg leading-relaxed">
-            Functioning as a veterinary clinic, we also offer pet supplies(toys, wet food, dry food,etc.) up for sale so that people that either come to have their pets checked or to find a furry riend of their own can shop for proper items that can assist them in taking care of their pet's wellbeing.
+              Functioning as a veterinary clinic, we also offer pet supplies(toys, wet food, dry food,etc.) up for sale so that people that either come to have their pets checked or to find a furry riend of their own can shop for proper items that can assist them in taking care of their pet's wellbeing.
             </p>
           </div>
         </div>
