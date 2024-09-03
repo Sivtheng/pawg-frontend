@@ -13,7 +13,7 @@ Pawg Adoption center is a web application designed to facilitate pet adoption. i
 ## Run locally
 
 1. Clone the repo
-> git clone https://github.com/yourusername/pawg-adoption-center.git
+> git clone https://github.com/Sivtheng/pawg-frontend.git
 
 2. Navigate to project directory
 > cd pawg-adoption-center
