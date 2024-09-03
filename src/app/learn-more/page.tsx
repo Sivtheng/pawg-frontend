@@ -13,10 +13,7 @@ const LearnMorePage = () => {
   return (
     <main className="flex flex-col min-h-screen">
       {/* First Div: Background Image */}
-      <div
-        className="relative w-full h-[50vh] bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/pink.png')" }}
-      >
+      <div className="relative h-[70vh] bg-cover bg-center" style={{ backgroundImage: "url('/images/pink.png')" }}>
       </div>
       <div className="flex-grow flex items-center justify-center bg-secondary py-8 px-4">
         <div className="text-center max-w-5l mx-auto">
