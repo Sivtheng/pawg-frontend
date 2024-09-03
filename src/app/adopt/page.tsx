@@ -26,11 +26,6 @@ const AdoptPage = () => {
 
             without fear of being mistreated or abused ever again.
           </p>
-          <p className="text-lg md:text-xl mb-8">
-            If you're interested in getting a fur buddy of your own, you can start by clicking the button below to apply.
-
-            Do consider that adoption costs will vary depending on the condition of the animal you chose.
-          </p>
           {/* Image Section */}
           <div className="mb-8">
             <img
@@ -39,6 +34,11 @@ const AdoptPage = () => {
               className="w-full max-w-md mx-auto rounded-lg shadow-lg object-cover"
             />
           </div>
+          <p className="text-lg md:text-xl mb-8">
+            If you're interested in getting a fur buddy of your own, you can start by clicking the button below to apply.
+
+            Do consider that adoption costs will vary depending on the condition of the animal you chose.
+          </p>
           <Link
             href="/adopt/apply"
             className="inline-block bg-primary text-black py-3 px-6 rounded-lg hover:bg-accent transition-colors font-semibold text-lg"
