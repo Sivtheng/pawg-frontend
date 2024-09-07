@@ -1,4 +1,3 @@
-// src/components/GetInTouchForm.tsx
 'use client';
 
 import React, { useState } from 'react';
@@ -11,36 +10,44 @@ const GetInTouchForm: React.FC = () => {
   const [submitStatus, setSubmitStatus] = useState<string | null>(null);
 
   const handleSubmit = async (event: React.FormEvent) => {
-    event.preventDefault();
+    event.preventDefault(); 
     setIsSubmitting(true);
     setSubmitStatus(null);
-
+  
+    const payload = { name, email, message };
+    console.log(JSON.stringify(payload));  // Log the payload for debugging
+  
     try {
-      const response = await fetch('/api/get-in-touch', { // Replace with your API endpoint
+      const response = await fetch('http://localhost:8080/public/get_in_touch', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ name, email, message }),
+        body: JSON.stringify(payload),
       });
 
+      console.log('Response status:', response.status);
+  
       if (response.ok) {
         setSubmitStatus('Thank you for reaching out! We will get back to you soon.');
         setName('');
         setEmail('');
         setMessage('');
       } else {
+        const errorMessage = await response.text();  // Capture any error message from the backend
+        console.error('Error:', errorMessage);       // Log the error
         setSubmitStatus('Something went wrong. Please try again later.');
       }
     } catch (error) {
+      console.error('Fetch error:', error);  // Log the error
       setSubmitStatus('Something went wrong. Please try again later.');
     } finally {
       setIsSubmitting(false);
     }
   };
-
   return (
     <form onSubmit={handleSubmit} className="bg-accent p-6 rounded-lg shadow-md max-w-lg mx-auto">
+      {/* Form fields */}
       <div className="mb-4">
         <label htmlFor="name" className="block text-lg font-medium text-gray-700">Name <span className="text-red-500">*</span></label>
         <input
